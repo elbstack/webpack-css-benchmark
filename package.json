@@ -1,0 +1,40 @@
+{
+  "name": "webpack-benchmark",
+  "version": "1.0.0",
+  "description": "webpack benchmark to test different implementation of CSS",
+  "private": true,
+  "scripts": {
+    "prebenchmark": "npm install",
+    "benchmark": "node benchmark.js",
+    "build:css-modules": "NODE_ENV=production webpack --config=webpack-css-modules.config.js",
+    "build:emotion": "NODE_ENV=production webpack --config=webpack-emotion.config.js",
+    "build:linaria": "NODE_ENV=production webpack --config=webpack-linaria.config.js",
+    "build:nostyles": "NODE_ENV=production webpack --config=webpack-nostyles.config.js",
+    "postinstall": "node postinstall.js"
+  },
+  "dependencies": {
+    "@emotion/core": "^10.0.9",
+    "@emotion/styled": "^10.0.9",
+    "linaria": "^1.1.0",
+    "markdown-table": "^1.1.2",
+    "mkdirp": "^0.5.1",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "rimraf": "^2.6.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "babel-plugin-emotion": "^10.0.9",
+    "css-hot-loader": "^1.4.2",
+    "css-loader": "^2.1.0",
+    "file-loader": "^2.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.4.4",
+    "webpack": "^4.22.0",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.1.14"
+  }
+}

@@ -1,0 +1,36 @@
+{
+    "trailingComma": "es5",
+    "singleQuote": true,
+    "printWidth": 140,
+    "parser": "flow",
+    "overrides": [
+        {
+            "files": "*.json",
+            "options": { "parser": "json" }
+        },
+        {
+            "files": "*.md",
+            "options": { "parser": "markdown" }
+        },
+        {
+            "files": "*.ts",
+            "options": { "parser": "typescript" }
+        },
+        {
+            "files": "*.tsx",
+            "options": { "parser": "typescript" }
+        },
+        {
+            "files": ".prettierrc",
+            "options": { "parser": "json" }
+        },
+        {
+            "files": "*.html",
+            "options": { "parser": "html" }
+        },
+        {
+            "files": "*.css",
+            "options": { "parser": "css" }
+        }
+    ]
+}
